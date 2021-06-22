@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="header">
+    <div class="nav-wrapper">
+      <div class="container d-flex align-items-center justify-items-space">
+        <div class="raw">
+          <div class="logo d-flex align-items-center">
+            <i class="large material-icons">flight_takeoff
+            </i>
+            <a href="#" class="brand-logo">Avia Tickets</a>
+          </div>
+
+
+          <!-- Dropdown Trigger -->
+          <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Favorites</a>
+
+          <!-- Dropdown Structure -->
+          <ul id='dropdown1' class='dropdown-content'>
+          </ul>
+        </div>
+        <div class="input-field currency-select">
+          <select id="currency">
+            <option value="USD">$ US Dollar</option>
+            <option value="EUR">€ Euro</option>
+            <option value="RUB">₽ RUB</option>
+          </select>
+        </div>
+        </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="form-section">
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col m6 mx-auto">
+          <div class="card">
+            <form name="locationControls" action="">
+              <div class="card-content">
+                <span class="card-title">Avia Tickets</span>
+              </div>
+
+              <div class="input-field">
+                <input type="text" id="autocomplete-origin" class="autocomplete">
+                <label class="input-label" for="autocomplete-origin">Origin</label>
+              </div>
+
+              <div class="input-field">
+                <input type="text" id="autocomplete-destination" class="autocomplete">
+                <label class="input-label" for="autocomplete-destination">Destination</label>
+              </div>
+
+              <div class="input-field">
+                <input type="text" class="datepicker" id="datepicker-depart">
+                <label class="input-label" for="datepicker-depart">Depart date</label>
+              </div>
+
+              <div class="input-field">
+                <input type="text" class="datepicker" id="datepicker-return">
+                <label class="input-label" for="datepicker-return">Return date</label>
+              </div>
+
+
+              <div class="card-actions d-flex">
+                <button class="btn waves-effect waves-light purple darken-3 btn-border-radius" type="submit"
+                  name="action">Search
+                  <i class="material-icons right">send</i>
+                </button>
+                <button class="btn waves-effect waves-light pink darken-3 btn-border-radius" type="reset"
+                  name="reset">Reset
+                  <i class="material-icons right">cancel</i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /. container -->
+  </div> <!-- /. form-section -->
+
+  <!-- <div class="container">
+    <div class="wrapper">
+      <div class="tickets-not-found">
+        <div class="not-found-text">
+          По вашему запросу билетов не найдено
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="tickets">
+    <div class="container">
+      <div class="tickets__wrapper">
+      </div> <!-- /. tickets__wrapper -->
+    </div> <!-- /. container -->
+  </div> <!-- /. tickets -->
+</body>
+
+</html>
