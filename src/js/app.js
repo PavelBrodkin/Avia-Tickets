@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const favoriteTrigger = favoriteUI.trigger;
 
   // Events
-  form.addEventListener("submit", (event) => {gir
+  form.addEventListener("submit", (event) => {
     event.preventDefault();
     onFormSubmit();
   });
