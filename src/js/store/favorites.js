@@ -24,7 +24,7 @@ class Favorites {
 
   deleteTicketFromList(id) {
     delete this.favoriteTicketsList[id];
-    localStorage.removeItem(id);
+    // localStorage.removeItem(id);
   }
 
   checkTheListLength() {
@@ -34,20 +34,20 @@ class Favorites {
     }
   }
 
-  setTicketsToLocalStorage(ticket) {
-    localStorage.setItem(ticket.id, JSON.stringify(ticket));
-  }
+  // setTicketsToLocalStorage(ticket) {
+  //   localStorage.setItem(ticket.id, JSON.stringify(ticket));
+  // }
 
-  setTicketsOnLoad() {
-    if (localStorage.length) {
-      for (let key in localStorage) {
-        if (key !== "loglevel:webpack-dev-server") {
-          const lastSelectedTicket = JSON.parse(localStorage.getItem(key));
-          this.renderTicket(lastSelectedTicket);
-        }
-      }
-    }
-  }
+  // setTicketsOnLoad() {
+  //   if (localStorage.length) {
+  //     for (let key in localStorage) {
+  //       if (key !== "loglevel:webpack-dev-server") {
+  //         const lastSelectedTicket = JSON.parse(localStorage.getItem(key));
+  //         this.renderTicket(lastSelectedTicket);
+  //       }
+  //     }
+  //   }
+  // }
 
   favoritetTicketTemplate(ticket, currency) {
     return `

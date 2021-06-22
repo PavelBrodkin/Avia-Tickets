@@ -12,22 +12,100 @@
 <body>
   <nav class="header">
     <div class="nav-wrapper">
-      <div class="container d-flex align-items-center">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down ml-auto">
-          <li>
-            <div class="input-field currency-select">
-              <select>
-                <option value="USD">$ US Dollar</option>
-                <option value="EUR">€ Euro</option>
-              </select>
-            </div>
-          </li>
+      <div class="container d-flex align-items-center justify-items-space">
+        <div class="raw">
+          <div class="logo d-flex align-items-center">
+            <i class="large material-icons">flight_takeoff
+            </i>
+            <a href="#" class="brand-logo">Avia Tickets</a>
+          </div>
+
+
+          <!-- Dropdown Trigger -->
+          <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Favorites</a>
+
+          <!-- Dropdown Structure -->
+          <ul id='dropdown1' class='dropdown-content'>
+          </ul>
+        </div>
+        <div class="input-field currency-select">
+          <select id="currency">
+            <option value="USD">$ US Dollar</option>
+            <option value="EUR">€ Euro</option>
+            <option value="RUB">₽ RUB</option>
+          </select>
+        </div>
+        </li>
 
         </ul>
       </div>
     </div>
   </nav>
-<script type="text/javascript" src="polyfill.86d8028b15853446e751.js"></script><script type="text/javascript" src="app.86d8028b15853446e751.js"></script></body>
+
+  <div class="form-section">
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col m6 mx-auto">
+          <div class="card">
+            <form name="locationControls" action="">
+              <div class="card-content">
+                <span class="card-title">Avia Tickets</span>
+              </div>
+
+              <div class="input-field">
+                <input type="text" id="autocomplete-origin" class="autocomplete">
+                <label class="input-label" for="autocomplete-origin">Origin</label>
+              </div>
+
+              <div class="input-field">
+                <input type="text" id="autocomplete-destination" class="autocomplete">
+                <label class="input-label" for="autocomplete-destination">Destination</label>
+              </div>
+
+              <div class="input-field">
+                <input type="text" class="datepicker" id="datepicker-depart">
+                <label class="input-label" for="datepicker-depart">Depart date</label>
+              </div>
+
+              <div class="input-field">
+                <input type="text" class="datepicker" id="datepicker-return">
+                <label class="input-label" for="datepicker-return">Return date</label>
+              </div>
+
+
+              <div class="card-actions d-flex">
+                <button class="btn waves-effect waves-light purple darken-3 btn-border-radius" type="submit"
+                  name="action">Search
+                  <i class="material-icons right">send</i>
+                </button>
+                <button class="btn waves-effect waves-light pink darken-3 btn-border-radius" type="reset"
+                  name="reset">Reset
+                  <i class="material-icons right">cancel</i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /. container -->
+  </div> <!-- /. form-section -->
+
+  <!-- <div class="container">
+    <div class="wrapper">
+      <div class="tickets-not-found">
+        <div class="not-found-text">
+          По вашему запросу билетов не найдено
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="tickets">
+    <div class="container">
+      <div class="tickets__wrapper">
+      </div> <!-- /. tickets__wrapper -->
+    </div> <!-- /. container -->
+  </div> <!-- /. tickets -->
+<script type="text/javascript" src="polyfill.0cf2285f901a04405350.js"></script><script type="text/javascript" src="app.0cf2285f901a04405350.js"></script></body>
 
 </html>

@@ -8,7 +8,7 @@ import favoriteUI from "../js/store/favorites";
 
 document.addEventListener("DOMContentLoaded", () => {
   initApp();
-  favoriteUI.setTicketsOnLoad();
+  // favoriteUI.setTicketsOnLoad();
 
   const form = formUI.form;
   const ticketsContainer = ticketsUi.container;
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const favoriteTrigger = favoriteUI.trigger;
 
   // Events
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", (event) => {gir
     event.preventDefault();
     onFormSubmit();
   });
@@ -66,8 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (search.id === parent.id) {
           favoriteUI.renderTicket(search);
           favoriteUI.addTicketToList(search);
-          favoriteUI.setTicketsToLocalStorage(search);
-
+          // favoriteUI.setTicketsToLocalStorage(search);
         }
       });
     }
